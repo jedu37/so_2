@@ -7,7 +7,7 @@ TARGET = ull-main
 
 all:	$(TARGET)
 
-$(TARGET):	main.cpp ull.0
+$(TARGET):	main.o ull.o
 		g++ -o $@ $^ $(LDFLAGS)
 
 $(TARGET):	ull.h
